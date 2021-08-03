@@ -18,7 +18,7 @@ export class Table {
    * Creates
    * @param {boolean} readOnly - read-only mode flag
    */
-  constructor(readOnly) {
+  constructor({ readOnly }) {
     this._numberOfColumns = 0;
     this._numberOfRows = 0;
     this._element = this._createTableWrapper();
